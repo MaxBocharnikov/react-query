@@ -8,7 +8,8 @@
     "start": "webpack-dev-server --mode=development --config webpack.config.js",
     "lint": "eslint 'src/**/*.{ts,tsx}' --quiet",
     "lint:fix": "eslint 'src/**/*.{ts,tsx}' --quiet --fix",
-    "format": "prettier --write 'src/**/*.{ts,tsx}'"
+    "format": "prettier --write 'src/**/*.{ts,tsx}'",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -44,8 +45,16 @@
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.32.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.1.0",
     "prettier": "^2.8.3",
     "react-hot-loader": "^4.13.1",
     "webpack-cli": "^5.0.1"
+  },
+  "lint-staged":{
+    "**/*.{js,jsx,ts,tsx}":[
+      "npx prettier --write",
+      "npx eslint --fix"
+    ]
   }
 }
