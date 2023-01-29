@@ -14,8 +14,9 @@ const Post1: React.FC = () => {
 
   const addPostMutation = useMutation({
     mutationFn: async (post: Post) => await addPost(post),
-    onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ['posts'] })
+    onSuccess: (data) => {
+      // queryClient.setQueryData(['posts'], data)
+      queryClient.invalidateQueries({ queryKey: ['posts'], exact: true })
     }
   })
 
