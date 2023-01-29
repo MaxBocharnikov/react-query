@@ -1,0 +1,49 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "gge",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "eee",
+      "author": "typicode"
+    },
+    {
+      "id": 3,
+      "title": "json-server3",
+      "author": "typicode"
+    },
+    {
+      "id": 4,
+      "title": "www",
+      "author": "typicode"
+    },
+    {
+      "id": 5,
+      "title": "rrr",
+      "author": "typicode"
+    },
+    {
+      "id": 6,
+      "title": "ttt",
+      "author": "typicode"
+    },
+    {
+      "id": 1675004726439,
+      "title": "some",
+      "author": "Max"
+    },
+    {
+      "id": 1675004742090,
+      "title": "some",
+      "author": "Max"
+    },
+    {
+      "id": 1675004746294,
+      "title": "some",
+      "author": "Max"
+    }
+  ]
+}
